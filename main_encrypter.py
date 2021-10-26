@@ -21,7 +21,7 @@ def encryption_algorithm():
 
     #the conversion table is a dictionary that just moves the character to the next one in the english alphabet
     conversion_table = {
-        "a" : "b", "b" : "c", "c" : "d", "d" : "e", "e" : "f", "f" : "g", "g" : "h", "h" : "i", "i" : "j", "j" : "k", "k" : "l", "l" : "m", "m" : "n", "n" : "o", "o" : "p", "p" : "q", "q" : "r", "r" : "s", "s" : "t", "t" : "u", "u" : "v", "v" : "w", "w" : "x", "x" : "y", "y" : "z", "z" : "a", "0" : "1", "1" : "2", "2" : "3", "3" : "4", "4" : "5", "5" : "6", "6" : "7", "7" : "8", "8" : "9", "9" : "0", " " : " "
+        "a" : "H", "b" : "I", "c" : "J", "d" : "K", "e" : "L", "f" : "M", "g" : "N", "h" : "O", "i" : "P", "j" : "Q", "k" : "R", "l" : "S", "m" : "T", "n" : "U", "o" : "V", "p" : "W", "q" : "X", "r" : "Y", "s" : "Z", "t" : "A", "u" : "B", "v" : "C", "w" : "D", "x" : "E", "y" : "F", "z" : "G", "0" : "7", "1" : "8", "2" : "9", "3" : "0", "4" : "1", "5" : "2", "6" : "3", "7" : "4", "8" : "5", "9" : "6", " " : " "
     }
 
     #for each character in the user message, it will find a corresponding letter in the dictionary and append it to the list
@@ -35,12 +35,12 @@ def encryption_algorithm():
 
 #function for the simple decryption process
 def decryption_algorithm():
-    user_input = input("Enter message you want to decrypt: ").lower()
+    user_input = input("Enter message you want to decrypt: ").upper()
     decrypt_output = []
 
     #the decrypt conversion table is a dictionary that just moves the character to the previous one in the english alphabet
     conversion_table = {
-        "b" : "a", "c" : "b", "d" : "c", "e" : "d", "f" : "e", "g" : "f", "h" : "g", "i" : "h", "j" : "i", "k" : "j", "l" : "k", "m" : "l", "n" : "m", "o" : "n", "p" : "o", "q" : "p", "r" : "q", "s" : "r", "t" : "s", "u" : "t", "v" : "u", "w" : "v", "x" : "w", "y" : "x", "z" : "y", "a" : "z", "1" : "0", "2" : "1", "3" : "2", "4" : "3", "5" : "4", "6" : "5", "7" : "6", "8" : "7", "9" : "8", "0" : "9", " " : " "
+        "H" : "a", "I" : "b", "J" : "c", "K" : "d", "L" : "e", "M" : "f", "N" : "g", "O" : "h", "P" : "i", "Q" : "j", "R" : "k", "S" : "l", "T" : "m", "U" : "n", "V" : "o", "W" : "p", "X" : "q", "Y" : "r", "Z" : "s", "A" : "t", "B" : "u", "C" : "v", "D" : "w", "E" : "x", "F" : "y", "G" : "z", "7" : "0", "8" : "1", "9" : "2", "0" : "3", "1" : "4", "2" : "5", "3" : "6", "4" : "7", "5" : "8", "6" : "9", " " : " "
     }
 
     #same thing as before but decrypting
